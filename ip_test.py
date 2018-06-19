@@ -5,8 +5,6 @@ from socket import inet_aton
 
 import os
 import struct
-import torndb
-import pandas as pd
 
 
 class IPIP(object):
@@ -63,6 +61,7 @@ class IPIP(object):
         res_offset = self.offset + index_offset - 1024
         result = self.binary[res_offset:res_offset + index_length].decode('utf-8')
         return result
+
 
 if __name__ == '__main__':
     ipfinder = IPIP()
