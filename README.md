@@ -9,6 +9,7 @@ categories: python
 >17monipdb是一款全球ipv4地址归属地数据库。专注于与地理位置定位相关的数据的整理与发行，致力于将地理位置数据变得更准确、更精确，该 IP 库主要基于 BGP/ASN 数据以及遍布全球的网络监测点进行城市级地域数据标注，准确度远高于国内国外同类产品
 ### 代码使用
 >ip_test.py就是用了17monipdb.dat，来做到离线不联网，可以查询多个ip的所在地理位置。下面展示的是它的main函数，测试了三个ip地址。
+
 ```python
 if __name__ == '__main__':
     ipfinder = IPIP()
